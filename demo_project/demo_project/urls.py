@@ -25,5 +25,8 @@ urlpatterns = [
     path("stt/<str:sn>/<str:rol>/<int:ag>/",views.st_det),
     path("fst/",views.frst),
     path("fst/<str:jk>/<str:a>/",views.dsply),
-    path("stud/",views.stud),
+    path("studG/",views.studG),
+    path("stdP/",views.studP),
+    path("",views.boot),
+
 ]
