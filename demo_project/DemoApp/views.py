@@ -30,3 +30,5 @@ def studP(request):
     return render(request,"firstapp/sformpost.html")
 def boot(self):
     return render(self,'firstapp/bt.html')
+def regform(self):
+    return render(self,"firstapp/regiform.html")
