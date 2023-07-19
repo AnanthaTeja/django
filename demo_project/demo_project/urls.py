@@ -20,15 +20,18 @@ from django.urls import path
 from DemoApp import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("s/",views.sample),
-    path("t/<str:y>/",views.demo),
-    path("stt/<str:sn>/<str:rol>/<int:ag>/",views.st_det),
-    path("fst/",views.frst),
-    path("fst/<str:jk>/<str:a>/",views.dsply),
-    path("studG/",views.studG),
-    path("stdP/",views.studP),
-    path("",views.boot),
-    path("re/",views.regform),
-
+    path("admin/", admin.site.urls),
+    path("s/", views.sample),
+    path("t/<str:y>/", views.demo),
+    path("stt/<str:sn>/<str:rol>/<int:ag>/", views.st_det),
+    path("fst/", views.frst),
+    path("fst/<str:jk>/<str:a>/", views.dsply),
+    path("studG/", views.studG),
+    path("stdP/", views.studP),
+    path("bt", views.boot),
+    path("re/", views.regform),
+    path("stat/", views.static),
+    path("boot/", views.boots),
+    path("", views.crud, name="cru"),
+    path("stupd/<int:k>/", views.stupdate, name="stupd"),
 ]
