@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display data</datagrid></title>
+    <style>
+      body {
+        color: rgb(164, 162, 161);
+      }
+      h3 {
+        color: rgb(64, 97, 97);
+        margin-top: 20px;
+        position: top;
+        margin-left: 50%;
+        border-color: violet;
+      }
+      h3 span {
+        color: red;
+      }
+      form {
+        background-color: rgb(58, 73, 58);
+      }
+      #frml {
+        height: 300px;
+        margin-left: 45%;
+        background-color: rgb(238, 228, 228);
+      }
+      #frmi {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        margin-left: 55%;
+        margin-bottom: 20px;
+      }
+      label {
+        margin: 10px;
+        margin-top: 30px;
+        color: black;
+      }
+      button {
+        border-color: aqua;
+      }
+      input {
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h3>Student Form <span>FROM</span></h3>
+      <table id="frml">
+        <tr>
+          <td><label for="roll">Roll Number: </label></td>
+          <td><input type="text" name="rn" placeholder="Roll num" /><br /></td>
+        </tr>
+        <tr>
+          <td><label for="name">Student Name: </label></td>
+          <td>
+            <input type="text" name="stn" placeholder="Enter your name" /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dep">Department: </label></td>
+          <td>
+            <input
+              type="text"
+              name="dep"
+              placeholder="Enter your department"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="emil">Email: </label></td>
+          <td>
+            <input
+              type="email"
+              name="eml"
+              placeholder="Enter your email id: "
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age">Age: </label></td>
+          <td>
+            <input
+              type="number"
+              name="age"
+              placeholder="Enter age"
+              max="18"
+              min="50"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Gender">Gender</label></td>
+          <td>
+            <input type="radio" name="Gen" /> <label>Male</label
+            ><input type="radio" name="Gen" />
+            <label>Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Upload File</label></td>
+          <td><input type="file" name="file" id="" /></td>
+        </tr>
+        <td><input type="submit" /></td>
+        <td><input type="reset" /></td>
+      </table>
+    </form>
+  </body>
+</html>

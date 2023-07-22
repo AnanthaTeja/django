@@ -32,6 +32,9 @@ urlpatterns = [
     path("re/", views.regform),
     path("stat/", views.static),
     path("boot/", views.boots),
-    path("", views.crud, name="cru"),
+    path("st", views.crud, name="cru"),
     path("stupd/<int:k>/", views.stupdate, name="stupd"),
+    path("stdel/<int:k>/", views.stde, name="stdel"),
+    path("em/", views.employee, name="em"),
+    path("empup/<int:k>/", views.empupdate, name="empup"),
 ]
